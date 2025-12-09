@@ -375,6 +375,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# Reduce system server verbosity.
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
