@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Bluetooth
 persist.bluetooth.a2dp_aac_abr.enable    u:object_r:exported_bluetooth_prop:s0
 
 # MIUI
 ro.miui.customized.region      u:object_r:exported_system_prop:s0
+
+# Dolby Volume Leveler control props (longest-prefix match beats the plat
+# persist.audio. -> audio_prop rule). Covers .volume_leveler and .boost.
+persist.audio.dolby.	u:object_r:dolby_audio_prop:s0
