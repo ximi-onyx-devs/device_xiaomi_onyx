@@ -135,6 +135,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/camerax-vendor-extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/camerax-vendor-extensions.xml
 
+# Dex2oat (Compile SystemServer & SystemUI on device with `speed`)
+PRODUCT_SYSTEM_PROPERTIES += \
+    dalvik.vm.systemservercompilerfilter=speed \
+    dalvik.vm.systemuicompilerfilter=speed
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
